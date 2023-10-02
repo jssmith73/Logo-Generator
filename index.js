@@ -1,7 +1,10 @@
 const inquirer = require('inquirer');
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
 const fs = require('fs');
+const SVG = require('./lib/svg');
+const createLogo = require('./lib/shapes')
 
+inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 
 const questions = 
 inquirer 
@@ -14,28 +17,27 @@ inquirer
     },
 
     {
-    name: "text-color",
-    type: "list",
-    message: "",
-    choices: ["blue", "red", "green", "yellow", "brown", "black", "white", "pink"]
+    name: "textColor",
+    type: "input",
+    message: "Choose your text color.",
     },
 
     {
     name: "shape",
     type: "list",
-    message: "",
+    message: "Choose the shape for your logo.",
     choices: ["circle", "triangle", "square"]
     },
 
     {
-    name: "shape-color",
-    type: "",
-    message: ""
+    name: "shapeColor",
+    type: "input",
+    message: "Choose the color for your shape."
     }
 ])
 
-.then((data) => {
-    fs.writeFile('logo.svg','Whatever goes here', function (err) {
+.then(() => {
+    fs.writeFile('logo.svg', createLogo, function (err) {
         if (err) throw err; 
     console.log('Generated logo.svg!')})
 })
