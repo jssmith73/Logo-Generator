@@ -36,8 +36,8 @@ inquirer
     }
 ])
 
-.then(() => {
-    fs.writeFile('logo.svg', createLogo, function (err) {
+.then((answers) => {
+    fs.writeFile('logo.svg', createLogo(answers), function (err) {
         if (err) throw err; 
     console.log('Generated logo.svg!')})
 })
