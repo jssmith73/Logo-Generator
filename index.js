@@ -4,7 +4,11 @@ const fs = require('fs');
 const SVG = require('./lib/svg');
 const {createLogo} = require('./lib/shapes')
 
+
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
+
+
+//List of logo input questions for user
 
 const questions = 
 inquirer 
@@ -35,6 +39,9 @@ inquirer
     message: "Choose the color for your shape."
     }
 ])
+
+
+//Writes the SVG file with user input.
 
 .then((answers) => {
     console.log(answers);

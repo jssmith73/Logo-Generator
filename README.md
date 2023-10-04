@@ -29,7 +29,9 @@
 
 ## Contributions:
 
-    github user: itsaboy, UNC Chapel Hill Full-Stack Coding Bootcamp Lesson Activities.
+    github user: itsaboy
+    UNC Chapel Hill Full-Stack Coding Bootcamp Lesson Activities.
+    AskBCS Learning Assistants
 
 ## Tests:
 
