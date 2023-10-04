@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
 const fs = require('fs');
 const SVG = require('./lib/svg');
-const createLogo = require('./lib/shapes')
+const {createLogo} = require('./lib/shapes')
 
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 
