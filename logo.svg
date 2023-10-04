@@ -1,6 +1,6 @@
 <svg version="1.1"
         width="300" height="200"
         xmlns="http://www.w3.org/2000/svg">
-        undefined
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="black" style="text-align:center;">jsw</text>
+        <circle cx="25" cy="75" r="20" fill="undefined" />
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="BLACK" style="text-align:center;">JSW</text>
     </svg>
